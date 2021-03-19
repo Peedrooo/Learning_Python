@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "python.pythonPath": "python",
+    "git.ignoreLimitWarning": true
+}
