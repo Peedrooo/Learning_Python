@@ -1,0 +1,5 @@
+print('PROGRAMA PRIMEIRO E ULTIMO NOME')
+name = input('Escreva seu nome completo ').strip().title()
+print(f'Analizando o nome {name}...')
+print(f'Seu primero nome é {name.split()[0]} ')
+print(f'E o ultimo é {name.split()[len(name.split())-1]} ')

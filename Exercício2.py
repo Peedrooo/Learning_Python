@@ -1,0 +1,6 @@
+print('PROGRAMA BOAS VINDAS')
+name=input('Qual o seu nome ? ')
+print('*-'*15)
+print(f'Seja muito bem vindo {name}')
+print('É um prazer te conhecer',name)
+print('*-'*15)
