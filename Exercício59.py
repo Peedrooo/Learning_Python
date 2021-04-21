@@ -1,14 +1,25 @@
+from time import sleep
 print('PROGRAMA MENU')
-escolha = 0
+escolha = 4
+qnt = 0
 while escolha != 5:
+    qnt+= 1
     print('''[1] Somar
 [2] Multiplicar
 [3] Maior
 [4] Novos números
 [5] Finalizar programa''')
-    num = int(input('Escolha um número '))
-    num2 = int(input('Mais um '))
+
+    if qnt == 1 :
+        num = int(input('Escolha um número '))
+        num2 = int(input('Mais um '))
+
     escolha = int(input('Como deseja proseguir com os número? '))
+
+    while escolha == 4:
+        num = int(input('Escolha um número '))
+        num2 = int(input('Mais um '))
+        escolha = int(input('Como deseja proseguir com os número? '))
 
     if escolha == 1:
         print(f'A soma entre {num} e {num2} recebe {num + num2}')
@@ -28,10 +39,10 @@ while escolha != 5:
 
         else:
             print('Os número são iguais')
-
-    elif escolha == 4:
-        num = int(input('Escolha um número '))
-        num2 = int(input('Mais um '))
-    
+    elif escolha == 5:
+        print('PROGRAMA ENCERRADO')
     else:
         print('Opção escolhida não cadastrada')
+
+    print('-='*15)
+    sleep(2)
