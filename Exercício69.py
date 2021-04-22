@@ -23,4 +23,3 @@ while True:
             break
 
 print(f'Temos: \n{maior} pessoas maiores de idade. \n{homem} homens cadastrados. \n{mulher} com menos de 20 anos')
-
