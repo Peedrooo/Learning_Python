@@ -26,3 +26,4 @@ for c in range(0,5):
                     print(f"Valor adicionadona posição {c+1}")
 
 print(f"Os valores digitados em ordem {valores}")
+ 
