@@ -1,6 +1,5 @@
 num = [[],[]]
-print(num)
-'''
+
 while True:
     escolha = int(input("escolha um número inteiro "))
     if escolha%2 == 0:
@@ -17,4 +16,3 @@ num[1].sort()
 
 
 print(f'Números em ordem crescente {num}')
-'''

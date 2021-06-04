@@ -3,8 +3,8 @@ aluno = 0
 
 while True:
     nome = (input('Nome: '))
-    nota1 = int(input('Nota 1: '))
-    nota2 = int(input('Nota 2: '))
+    nota1 = float(input('Nota 1: '))
+    nota2 = float(input('Nota 2: '))
     total[aluno][0].append(nome)
     total[aluno][1].append(nota1)
     total[aluno][1].append(nota2)
