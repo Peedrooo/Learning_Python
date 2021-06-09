@@ -17,7 +17,6 @@ jogos = {k: v for k, v in sorted(jogadas.items(), key = lambda item: item[1], re
 
 print("Ranking: ")
 
-
 for e, (k,v) in enumerate (jogos.items()):
     print(f" {e+1}º lugar: {k} com {v}")
     sleep(0.5)
