@@ -22,25 +22,24 @@ linha()
 print('cod  nome         gols        total')
 linha()
 
-for v in enumerate (jogadores):
+for v in jogadores:
     print(v["Cod"], v["Nome"], v["Gols"],v["Total"])
 linha()
 
 esc = int(input("Mostrar dados de qual jogador ? "))
 
 
+
 while esc != 999:
     if esc not in range(len(jogadores)) :
         print(f'ERRO! Não exite jogador com o código {esc}! Tente novamente')
     else:
-        for c in range(0,len(jogadores)):
-            if 
-            
-        
-
-
-                
+        for v in jogadores:
+            if esc == v["Cod"]:
+                print(v["Cod"], v["Nome"], v["Gols"],v["Total"])
+                       
     esc = int(input("Mostrar dados de qual jogador ? "))
+    
 print('FINALIZANDO')
 
 
