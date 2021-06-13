@@ -35,12 +35,10 @@ while esc != 999:
         print(f'ERRO! Não exite jogador com o código {esc}! Tente novamente')
     else:
         for v in jogadores:
-            if esc == v["Cod"]:
-                print(v["Cod"], v["Nome"], v["Gols"],v["Total"])
-                       
+            if v["Cod"] == esc:
+                print(f'--Levantamento do jogador {v["Nome"]}')
+                for c in range(len(v["Gols"])):
+                    print(f'No jogo {c} fez {v["Gols"][c]}')
     esc = int(input("Mostrar dados de qual jogador ? "))
-    
+                       
 print('FINALIZANDO')
-
-
-
