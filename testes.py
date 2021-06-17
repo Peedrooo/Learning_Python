@@ -6,9 +6,7 @@ for i in range(0,len(cl_cadastrados)):
 
     if (nome == cl['nome']):
         print(cl["cpf"])
-
-'''
-
+        
 jogador = {}
 jogadores = []
 d = 0
@@ -47,3 +45,4 @@ while True:
     
         
 print("PROGRAMA FINALIZADO")     
+'''
