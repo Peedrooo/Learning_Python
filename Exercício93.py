@@ -25,4 +25,4 @@ linha()
 print(f'O jogador {jogo["Nome"]} jogou {len(jogo["Gols"])} partidas')
 for e,v in enumerate (jogo["Gols"] ):
     print(f"=> Na partida {c}, fez {v} gols.")
-print(f'Foi um total de {jogo["Total"]} gols')
+print(f'Foi um total de {jogo["Total"]} gols.')

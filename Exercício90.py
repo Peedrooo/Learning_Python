@@ -15,9 +15,11 @@ for k, v in dados.items():
 alunos = {}
 
 alunos["Nome"] = input('Nome: ')
-alunos["Média"] = float(input('Média: '))
-if alunos["Média"] >= 5:
+alunos["Média"] = float(input(f'Média de {alunos["Nome"]} '))
+if alunos["Média"] >= 7:
     alunos["Situação"] = "Aprovado"
+elif alunos["Média"] >= 5:
+    alunos["Situação"] = "Recuperação"
 else:
     alunos["Situação"] = "Reprovado"
 
