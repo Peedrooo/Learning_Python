@@ -11,8 +11,8 @@ def cont(i,p,f):
     if i > f:
         linha()
         while True:
-            print(i,end=" ")
-            sleep(0.5)
+            print(i,end=" ",flush = True)
+            sleep(0.25)
             i = i - p 
             if i < f:
                 print() 
@@ -21,8 +21,8 @@ def cont(i,p,f):
     elif i < f:
         linha()
         while True:
-            print(i,end=" ")
-            sleep(0.5)            
+            print(i,end=" ",flush = True)
+            sleep(0.25)            
             i = i + p
             if i > f:
                 print()
@@ -30,7 +30,4 @@ def cont(i,p,f):
                 break
 cont(1,1,10)
 cont(10,2,0)
-
-
-
 cont(i=int(input("Início ")),p=int(input("Passo ")),f=int(input("Fim ")))
