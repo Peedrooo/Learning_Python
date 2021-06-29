@@ -45,3 +45,4 @@ while True:
     
         
 print("PROGRAMA FINALIZADO")     
+help()
