@@ -13,7 +13,7 @@ def notas(*nota,sit = False):
     boletin['Media'] = (sum(notas)/len(notas))
     boletin['Maior'] = max(notas)
     boletin['Menor'] = min(notas)
-    if sit == True:
+    if sit:
         if boletin['Media'] >= 7:
             boletin['Situação'] = 'Boa'  
         elif boletin['Media'] >= 5:

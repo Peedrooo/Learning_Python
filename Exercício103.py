@@ -1,7 +1,11 @@
+# Cadastro de jogadores
+
+
 def ficha(nome = "<Desconhecido>", gol = '0'):
     
     return(f"O jogador: {nome} fez {gol} gols")
 
+'''
 while True:
     name = (input("Nome: ")).strip()
     gols = (input('Gols ')).strip()
@@ -14,4 +18,16 @@ while True:
             print(ficha(gol = gols))
         if len(name)>0 and len(gols) == 0:
             print(ficha(nome=name))
-        
+'''
+
+while True:
+    name = (input("Nome: ")).strip()
+    gols = (input('Gols ')).strip()
+    if name.isalpha() == False:
+        name = "<Desconhecido>"
+    if gols.isnumeric():
+        int(gols)
+    else:
+        gols = 0
+    print(ficha(nome = name, gol = gols))
+

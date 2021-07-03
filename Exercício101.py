@@ -1,6 +1,5 @@
-from datetime import date
-
 def voto(ano):
+    from datetime import date
     global idade 
     idade = date.today().year - ano
     if 15 < idade < 18 or 65 < idade:
