@@ -31,3 +31,16 @@ def moeda(valor,Conversão = True):
         return 'R$ {:.2f}'.format(valor)
     else:
         return (valor)
+def linha():
+    print("-="*16)
+
+def resumo(valor,au,red):
+    linha()
+    print("RESUMO DO VALOR".center(16))
+    linha()
+    print(f'Valor analisado:   R${valor:.2f}')
+    print(f'Dobro do preço:    R${valor*2:.2f}')
+    print(f'Metade do preço:   R${valor/2:.2f}')
+    print(f'{au}% de aumento:    R${valor + valor*(au/100):.2f}')
+    print(f'{red}% do redução:   R${valor - valor*(red/100):.2f}')
+    linha()

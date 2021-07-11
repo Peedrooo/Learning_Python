@@ -1,0 +1,1 @@
+# Pacote com de módulos criados para a aula de Python (moeda e dado).
