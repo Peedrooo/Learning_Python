@@ -13,3 +13,6 @@ def dobro(valor):
 def metade(valor):       
     total = valor / 2       
     return total
+
+def moeda(valor):
+    return 'R$ {:.2f}'.format(valor)
