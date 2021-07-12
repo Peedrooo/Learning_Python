@@ -34,7 +34,7 @@ def moeda(valor,Conversão = True):
 def linha():
     print("-="*16)
 
-def resumo(valor,au,red):
+def resumo(valor,au=10,red=5):
     linha()
     print("RESUMO DO VALOR".center(16))
     linha()
