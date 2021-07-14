@@ -17,28 +17,34 @@ Aula 23:
 """
 
 def leiaint():
-    try:
-        num = int(input("Digite um número inteiro "))
-    except KeyboardInterrupt:
-        print(f'Valor não inserido')
-    except (TypeError,ValueError):
-        print('Erro no tipo de dado inserido')
-    except Exception as erro:
-        print(f"Erro desconhecido: {erro.__class__}")
-    else:
-        return num
+    while True:
+        try:
+            num = int(input("Digite um número inteiro "))
+        except KeyboardInterrupt:
+            num = 0
+            print('Valor 1 inserido')
+        except (TypeError,ValueError):
+            print('Erro no tipo de dado inserido')
+        except Exception as erro:
+            print(f"Erro desconhecido: {erro.__class__}")
+        else:
+            return num
+            
 
 def leiareal():
-    try:
-        num = float(input("Digite um Real: "))
-    except (TypeError,ValueError):
-        print('Erro no tipo de dado inserido')
-    except (TypeError,ValueError):
-        print('Erro no tipo de dado inserido')
-    except Exception as erro:
-        print(f"Erro: {erro.__class__}")
-    else:
-        return num
+    while True:
+        try:
+            num = float(input("Digite um Real: "))
+        except (TypeError,ValueError):
+            print('Erro no tipo de dado inserido')
+        except (KeyboardInterrupt):
+            num = 1
+            print('Valor 1 inserido')
+        except Exception as erro:
+            print(f"Erro: {erro.__class__}")
+        else:
+            return num
+            
 
-print(leiaint(),leiareal())
+print(f'O produto dos números digitados resulta em: {leiaint()*leiareal()}')
 
