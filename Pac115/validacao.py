@@ -1,12 +1,12 @@
 from Pac115.estilo import vermelho
-def leiaint3(x):
+def leiainte(x,y):
     while True:
         try:
             var = int(input(x))
         except:
             print(vermelho('Valor inválido'))
         else:
-            if var in range(1,4):
+            if var in range(1,y+1):
                 return var
             else:
                 print(vermelho("Opção inválida"))
@@ -19,8 +19,3 @@ def leiaint(x):
             print(vermelho('Valor inválido'))
         else:
             return var
-
-
-
-
-    
