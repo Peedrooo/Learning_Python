@@ -12,3 +12,16 @@ def verde(x):
 
 def amarelo(x):
     return('\033[1;33m'+x+'\033[m')
+
+def cabeçalho(x):
+    linha()
+    print("{:^30}".format(x))
+    linha()
+
+def item(x,y):
+    return (amarelo(x),'-',azul(y))
+
+def menu(lista):
+    for e,c in enumerate (lista):
+        e+=1
+        print(amarelo(str(e)),'-',azul(c))
