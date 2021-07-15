@@ -21,10 +21,11 @@ def leiaint():
         try:
             num = int(input("Digite um número inteiro "))
         except KeyboardInterrupt:
-            num = 0
-            print('Valor 1 inserido')
+            num = 1
+            print('Entrada de dados interrompida')
         except (TypeError,ValueError):
             print('Erro no tipo de dado inserido')
+            continue
         except Exception as erro:
             print(f"Erro desconhecido: {erro.__class__}")
         else:
@@ -39,7 +40,7 @@ def leiareal():
             print('Erro no tipo de dado inserido')
         except (KeyboardInterrupt):
             num = 1
-            print('Valor 1 inserido')
+            print('Entrada de dados interrompida')
         except Exception as erro:
             print(f"Erro: {erro.__class__}")
         else:
