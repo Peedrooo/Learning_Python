@@ -1,5 +1,5 @@
 def linha():
-    print('--'*15)
+    print('--'*20)
 
 def azul(x):
     return('\033[1;34m'+x+'\033[m ')
