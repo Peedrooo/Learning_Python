@@ -21,8 +21,14 @@ Repositório para desenvolvimento na linguagem Python, ampliando habilidade em:
       <img height="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg">
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/minitab/minitab-plain.svg" />
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+</div>
+
+## Frameworks
+<div align = "center">
      <img  height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
 </div>
 
 
