@@ -3,6 +3,7 @@
 Repositório para desenvolvimento na linguagem Python, ampliando habilidade em: 
 * Lógica de programação
 * Paradigmas de programação
+* Estrutura de dados
 * Bibliotecas
 * Frameworks
 
@@ -25,10 +26,11 @@ Repositório para desenvolvimento na linguagem Python, ampliando habilidade em:
 </div>
 
 ## Frameworks
-<div align = "center">
-     <img  height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+[//]: <div align = "center">
+[//]:     <img  height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+[//]:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          
-</div>
+[//]: </div>
 
 
