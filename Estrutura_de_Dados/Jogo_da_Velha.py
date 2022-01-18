@@ -3,31 +3,37 @@ def iniciar_jogo():
     print('''Bem vindo ao jogo da velha\nO primeiro a jogar é o X\nO jogo acaba quando houver 3 X ou 3 O na mesma linha, coluna ou diagonal\nCaso precise desfazer a jogada, digite "desfazer"\n''')
     vez = 'X'
     # criando tabuleiro
-    tabuleiro = [[' ',' ',' '],
-                [' ',' ',' '],
-                [' ',' ',' ']]
-
-    while True:
-        imprimir_tabuleiro(tabuleiro)
-        print(f'Vez do jogador {vez}')
-        tabuleiro = jogar(vez, tabuleiro) 
-
-        if verificar_vencedor(tabuleiro):
+    continuar = True
+    while continuar:
+        tabuleiro = [[' ',' ',' '],
+                    [' ',' ',' '],
+                    [' ',' ',' ']]
+        while True:
             imprimir_tabuleiro(tabuleiro)
-            print(f'O jogador {vez} venceu!')
-            break
-        elif verificar_empate(tabuleiro):
-            imprimir_tabuleiro(tabuleiro)
-            print('Empate!')
-            break
-        else:
-            vez = alternador_vez(vez)
+            print(f'Vez do jogador {vez}')
+            tabuleiro = jogar(vez, tabuleiro) 
+
+            if verificar_vencedor(tabuleiro):
+                imprimir_tabuleiro(tabuleiro)
+                print(f'O jogador {vez} venceu!')
+                break
+            elif verificar_empate(tabuleiro):
+                imprimir_tabuleiro(tabuleiro)
+                print('Empate!')
+                break
+            else:
+                vez = alternador_vez(vez)
+        continuacao = input('Deseja continuar? (s/n) ')
+        if continuacao in 'Nn':
+            continuar = False
+        
+
 
 
 # função para inserir valores no tabuleiro
 def jogar(vez, tabuleiro):
     while True:
-        coordenada = input('Digite a coordenada no formato 0,0: ')
+        coordenada = input('Digite a coordenada no formato "n,n": ')
         global linha
         global coluna
 
@@ -58,6 +64,7 @@ def alternador_vez(vez):
 def imprimir_tabuleiro(tabuleiro):
     for c in tabuleiro:
         print(c)
+    print()
 
 # função para verificar se há vencedor
 def verificar_vencedor(tabuleiro):
@@ -83,8 +90,4 @@ def verificar_empate(tabuleiro):
             return False
     return True
             
-
-
-
-
 iniciar_jogo()
