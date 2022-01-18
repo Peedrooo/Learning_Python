@@ -68,15 +68,15 @@ def imprimir_tabuleiro(tabuleiro):
 
 # função para verificar se há vencedor
 def verificar_vencedor(tabuleiro):
-    # Verificando linhas
-    for c in tabuleiro:
+        
+    # Verificando colunas e linhas 
+    for c in range(3):
         if c[0] == c[1] == c[2] != ' ':
             return True
-    # Verificando colunas
-    for c in range(3):
-        if tabuleiro[0][c] == tabuleiro[1][c] == tabuleiro[2][c] != ' ':
+        elif tabuleiro[0][c] == tabuleiro[1][c] == tabuleiro[2][c] != ' ':
             return True
-    # Verificando diagonais       
+            
+    # Verificando diagonais          
     if tabuleiro[0][0] == tabuleiro[1][1] == tabuleiro[2][2] != ' ':
         return True  
     elif tabuleiro[0][2] == tabuleiro[1][1] == tabuleiro[2][0] != ' ':
