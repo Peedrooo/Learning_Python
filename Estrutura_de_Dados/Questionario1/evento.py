@@ -24,9 +24,5 @@ def evento(tempo1,tempo2):
 
     return f'{dias} dia(s) \n{horas} hora(s) \n{minutos} minuto(s) \n{segundos} segundo(s)'
            
-
-
-
-
 print(evento(input(),input()))
     
