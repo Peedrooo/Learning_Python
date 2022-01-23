@@ -1,3 +1,6 @@
+'''
+'''
+from math import ceil
 def palindromo(string):
     qnt = len(string)
     if qnt == 1:
@@ -6,7 +9,7 @@ def palindromo(string):
         if string == string[::-1]:
             return False
     cont = 0
-    for c in range(qnt//2):
+    for c in range(ceil(qnt/2)):
         if string[c] == string[-c-1]:
             cont += 1
     if cont + 4 - qnt >= 0 and cont > 0:
@@ -21,3 +24,5 @@ else:
     print('IMPOSSÍVEL')
     
 # 0,71 -> necessario refatorar
+
+         
