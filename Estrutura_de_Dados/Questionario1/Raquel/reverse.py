@@ -1,11 +1,8 @@
-def decrescente(num):
-    valores = []
-    for i in range(len(num)):       
-        if num[i].isalnum():
-            valores.append(int(num[i]))
+def decrescente(*num):
+    valores = list(map(int,num))
     valores.sort(reverse=True)
-    return valores
+    return tuple(valores)
 
-print(decrescente('2, 21, 2'))
+print(decrescente(2, 21, 2))
 
 
