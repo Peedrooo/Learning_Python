@@ -1,5 +1,3 @@
-'''
-'''
 from math import ceil
 def palindromo(string):
     qnt = len(string)
@@ -23,6 +21,6 @@ if palindromo(input()):
 else:
     print('IMPOSSÍVEL')
     
-# 0,71 -> necessario refatorar
+
 
          
