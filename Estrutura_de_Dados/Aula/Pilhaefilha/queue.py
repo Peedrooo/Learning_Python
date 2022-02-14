@@ -12,4 +12,4 @@ class Queue:
         return len(self.items) == 0
     
     def size(self):
-        return len(self.times)
+        return len(self.items)
