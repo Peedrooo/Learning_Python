@@ -7,6 +7,9 @@ class Queue:
     
     def dequeue(self):
         return self.items.pop()
+
+    def first(self):
+        return self.items.pop(0)
     
     def isEmpty(self):
         return len(self.items) == 0
