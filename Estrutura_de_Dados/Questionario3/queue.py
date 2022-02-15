@@ -16,3 +16,6 @@ class Queue:
     
     def size(self):
         return len(self.items)
+
+    def show(self):
+        return self.items
