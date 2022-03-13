@@ -2,19 +2,30 @@
 
 
 # Um, dois, três Fibonaccis...
-def fibonacci(n,cont=0):
-    cont += 1
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return (fibonacci(n-1,cont)[0] + fibonacci(n-2,cont)[0])
+
+
+
 
 def Fib(n):
-    a,b = fibonacci(n)
-    print(a,b)
-Fib(10)
+    chamadas = [] 
+
+    def fibonacci(n):
+        if n == 1:
+            chamadas.append(n)
+            return 0
+        elif n == 2:
+            chamadas.append(n)
+            return 1
+        else: 
+            chamadas.append(n)
+            # print(chamadas) 
+            return fibonacci(n-1) + fibonacci(n-2)
+
+    print(f'Fib({n}) = {fibonacci(n+1)} ({len(chamadas)} chamadas)')
+
+Fib(int(input()))
+
+
     
 
 
