@@ -18,4 +18,4 @@ def avaliacao(exe,tra):
             return (nf,'II')
         
 
-print(avalicao(5,4))
+print(avaliacao(5,4))
